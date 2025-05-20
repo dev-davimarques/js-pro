@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lista de dados</title>
+  </head>
+  <body>
+    <h1>Carros</h1>
+    <p>Escolha o modelo do carro</p>
+
+    <form action="">
+      <select name="modelo" id="modelo">
+        <option value="Volvo">Modelo Volvo</option>
+        <option value="Mercedes" selected>Modelo Mercedes</option>
+        <option value="Audio">Modelo Audio</option>
+      </select>
+
+      <hr />
+
+      <label for="fabricante">Escolha o fabricante</label>
+      <input type="text" id="fabricante" name="fabricante" list="fabricantes" />
+      <datalist id="fabricantes">
+        <option value="Fiat"></option>
+        <option value="Chevrolet"></option>
+        <option value="Volks"></option>
+      </datalist>
+      <input type="submit" value="Enviar" />
+    </form>
+  </body>
+</html>
