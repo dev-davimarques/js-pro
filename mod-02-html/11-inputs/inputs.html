@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inputs</title>
+  </head>
+  <body>
+    <!-- Inputs sao usados para entrada/captura de dados dos ususários -->
+
+    <!-- atributo "name" é utilizado para enviar os dados do formulario para servidor -->
+    <h1>Pesquisar no Google Maps</h1>
+    <form action="https://www.google.com.br/maps">
+      <!-- https://www.google.com.br/maps?q=crateus -->
+      <input
+        type="text"
+        id="q"
+        name="q"
+        placeholder="Ex: museu, parque, etc"
+        maxlength="10"
+      />
+      <input type="submit" value="Pesquisar" />
+    </form>
+
+    <hr />
+    <!-- Os formularios sao independentes -->
+
+    <h1>Pesquisar no Google</h1>
+    <form action="https://www.google.com.br/search">
+      <!-- https://www.google.com.br/search?q=crateus -->
+      <input
+        type="text"
+        id="q"
+        name="q"
+        placeholder="Pesquisa no google"
+        maxlength="10"
+      />
+      <input
+        type="text"
+        id="q"
+        name="q"
+        maxlength="30"
+        placeholder="complemento"
+      />
+      <input type="submit" value="Pesquisar" />
+    </form>
+  </body>
+</html>

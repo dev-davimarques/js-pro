@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercício Formulário</title>
+  </head>
+  <body>
+    <h1>Cadastro de Cliente</h1>
+
+    <div>
+      <form action="">
+        <label for="nome">Nome</label>
+        <input type="text" name="nome" id="nome" required />
+        <br />
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" />
+        <br />
+        <label for="senha">Senha</label>
+        <input type="password" name="senha" id="senha" required />
+        <label for="confimarSenha">Confrimar Senha</label>
+        <input
+          type="password"
+          name="confimarSenha"
+          id="confimarSenha"
+          required
+        />
+        <br />
+        <label for="dataCadastro">Data de Cadastro</label>
+        <input type="date" name="dt" id="dt" />
+        <br />
+        <input
+          type="checkbox"
+          name="receberEmail"
+          id="receberEmail"
+          value="sim"
+        />
+        <label for="receberEmail">Deseja receber email</label>
+        <br />
+        <input
+          type="checkbox"
+          name="possuiFiliais"
+          id="possuiFiliais"
+          value="sim"
+        />
+        <label for="possuiFiliais">Possui Filiais</label>
+        <br />
+        <fieldset>
+          <legend>Tipo de Cliente</legend>
+          <div>
+            <input type="radio" name="tipoCliente" id="vip" value="vip" />
+            <label for="vip">VIP</label>
+          </div>
+          <div>
+            <input type="radio" name="tipoCliente" id="gold" value="gold" />
+            <label for="gold">Gold</label>
+          </div>
+        </fieldset>
+        <br />
+        <input type="reset" value="Limpar" />
+        <input type="submit" value="Salvar" />
+      </form>
+    </div>
+  </body>
+</html>
